@@ -8,7 +8,8 @@
     "start": "node api/index.js",
     "seed": "node scripts/seed.js",
     "build": "esbuild public/react/index.jsx --bundle --format=iife --global-name=ABCSolutionsCompanyReact --outfile=public/js/react-widgets.js",
-    "vercel-build": "npm run build"
+    "vercel-build": "npm run build",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "cors": "^2.8.5",
