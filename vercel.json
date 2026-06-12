@@ -7,6 +7,9 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/css/(.*)", "dest": "/public/css/$1" },
+    { "src": "/js/(.*)", "dest": "/public/js/$1" },
+    { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
     { "src": "/our-story", "dest": "/public/our-story.html" },
     { "src": "/solutions", "dest": "/public/solutions.html" },
     { "src": "/what-we-offer", "dest": "/public/what-we-offer.html" },
