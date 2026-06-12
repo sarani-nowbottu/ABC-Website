@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "builds": [
+    { "src": "public/**", "use": "@vercel/static" },
+    { "src": "api/index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/our-story", "dest": "/public/our-story.html" },
+    { "src": "/solutions", "dest": "/public/solutions.html" },
+    { "src": "/what-we-offer", "dest": "/public/what-we-offer.html" },
+    { "src": "/career", "dest": "/public/career.html" },
+    { "src": "/(.*)", "dest": "/public/index.html" }
+  ]
+}
