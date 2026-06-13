@@ -11,6 +11,27 @@ Full-stack company website for ABC Solutions company Pvt. Ltd.
 
 ---
 
+## 🚀 Live Demo
+
+**Website is live and hosted on Vercel!**
+
+- **Main URL:** [https://abc-website-chi.vercel.app/](https://abc-website-chi.vercel.app/)
+- **Health Check:** [https://abc-website-chi.vercel.app/api/health](https://abc-website-chi.vercel.app/api/health)
+- **Careers Page:** [https://abc-website-chi.vercel.app/career](https://abc-website-chi.vercel.app/career)
+
+### Quick Test Links
+- **View Jobs:** [https://abc-website-chi.vercel.app/api/careers](https://abc-website-chi.vercel.app/api/careers)
+- **View Solutions:** [https://abc-website-chi.vercel.app/api/solutions](https://abc-website-chi.vercel.app/api/solutions)
+
+### Features Available on Live Site
+✅ Browse company solutions  
+✅ View job openings  
+✅ Submit contact form (Home page)  
+✅ Apply for jobs (Career page)  
+✅ All data saved to MongoDB Atlas database  
+
+---
+
 ## Part 1 — Set up MongoDB Atlas (free cloud database)
 
 Follow these steps once. You do not install MongoDB on your computer.
@@ -101,7 +122,7 @@ Open [http://localhost:5000](http://localhost:5000)
 **Contact form test** (PowerShell):
 
 ```powershell
-Invoke-RestMethod -Uri "http://localhost:5000/api/contact" -Method POST -ContentType "application/json" -Body '{"fullName":"Test User","email":"test@example.com","subject":"Hello","message":"This is a test message for the mentor demo."}'
+Invoke-RestMethod -Uri "http://localhost:5000/api/contact" -Method POST -ContentType "application/json" -Body '{"fullName":"Test User","email":"test@example.com","subject":"Hello","message":"This is a[...]
 ```
 
 ---
